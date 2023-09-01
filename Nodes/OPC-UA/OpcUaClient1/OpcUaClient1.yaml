@@ -1,0 +1,191 @@
+Name: OpcUaClient1
+Id: g=37c546406b97bf6d0d30485faa42ad15
+Type: OPCUAClient
+Children:
+- Name: ServerEndpointURL
+  Id: g=9d4c00c30ee4e812dbaac8ce3678249c
+  Type: BaseDataVariableType
+  DataType: String
+  Value: "opc.tcp://localhost:59100"
+- Name: MinimumMessageSecurityMode
+  Id: g=af3ee68321d01da2d7524668d1dfd4e1
+  Type: BaseDataVariableType
+  DataType: ns=13;MessageSecurityModeEnum
+  Value: 0
+- Name: MinimumSecurityPolicy
+  Id: g=3951d82c79580c25d8a60e8b1d08f571
+  Type: BaseDataVariableType
+  DataType: ns=13;SecurityPolicyEnum
+  Value: 0
+- Name: UserIdentityType
+  Id: g=03c0f7241ab3d286f42aef4bf662c3f3
+  Type: BaseDataVariableType
+  DataType: UserIdentityTypeEnum
+  Value: 0
+- Name: ConnectionStatus
+  Id: g=733cb86aead8f45c1cf6833c2045a9e9
+  Type: BaseDataVariableType
+  DataType: ConnectionStatusEnum
+  AccessLevel: Read
+  Value: 0
+- Name: ServerUri
+  Id: g=f8f3bad242ea99dbcaed9dba077778f6
+  Type: BaseDataVariableType
+  DataType: String
+  AccessLevel: Read
+  Value: ""
+- Name: Events
+  Id: g=bca34816634de005b693e07b6e332311
+  Type: BaseDataVariableType
+  DataType: EventsEnum
+  Value: 1
+- Name: RuntimeConfigurations
+  Id: g=f1f5fd324c80b4e7de2f39fed48641af
+  Type: BaseObjectType
+  Children:
+  - Name: RuntimeConfiguration1
+    Id: g=6d1b748e532eaec16ec1b94f3d66800e
+    Type: RuntimeConfigurationEntry
+    Children:
+    - Name: LocalDestinationNode
+      Id: g=e72de10392e905592de0c6650f48b0df
+      Type: BaseDataVariableType
+      DataType: NodeId
+      Value: {"IdType":2,"Id":"711faefca649a3b3922a3bd7c1bc2f2e","Namespace":16}
+    - Name: RemoteSourceNode
+      Id: g=e90883cb2beb8012068be1e9c7077cd9
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "/Objects/FeaturesDemo/Model/Process/MachineToMachine"
+    - Name: ContentSynchronizationMode
+      Id: g=b991be608c5e2e98592e4cf0a7a995fa
+      Type: BaseDataVariableType
+      DataType: ContentSynchronizationModeEnum
+      Value: 3
+    - Name: IncludeRemoteSourceNode
+      Id: g=8db8345bb07146ff5f4ceb24c1e41d92
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: false
+    - Name: EventSynchronization
+      Id: g=d16e8d815bd6e7a51124a80338f3d7ed
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: false
+  - Name: RuntimeConfiguration2
+    Id: g=66f4629c511afcee1de12b17a5c838cd
+    Type: RuntimeConfigurationEntry
+    Children:
+    - Name: LocalDestinationNode
+      Id: g=44c1e2ffda79a85e2d290ec4b8ec5292
+      Type: BaseDataVariableType
+      DataType: NodeId
+      Value: {"IdType":2,"Id":"91a940d160a4ccb503670191b3b882ac","Namespace":16}
+    - Name: RemoteSourceNode
+      Id: g=6012382de61ddab81600354312fece22
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "/Objects/FeaturesDemo/UI/Sections/Process/Hmi1"
+    - Name: ContentSynchronizationMode
+      Id: g=1bf41307b0e8788b56601bd99cb09309
+      Type: BaseDataVariableType
+      DataType: ContentSynchronizationModeEnum
+      Value: 3
+    - Name: IncludeRemoteSourceNode
+      Id: g=46850c891cd84f383e0ce272c2378a7b
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: EventSynchronization
+      Id: g=866cbaabbee3295e0190b2c2862e7de1
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: false
+  - Name: RuntimeConfiguration3
+    Id: g=30b6eddeb4a8b562df4913781c67c304
+    Type: RuntimeConfigurationEntry
+    Children:
+    - Name: LocalDestinationNode
+      Id: g=1d90d12b95eda4b323df86f9514971bf
+      Type: BaseDataVariableType
+      DataType: NodeId
+      Value: {"IdType":2,"Id":"e7d5b9200e8113527e4425924d7c3be1","Namespace":16}
+    - Name: RemoteSourceNode
+      Id: g=0f1aa07277cfc4641f61407c8424a06c
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "/Objects/FeaturesDemo/Translations"
+    - Name: ContentSynchronizationMode
+      Id: g=a4817c0ed8059eed6a78dc9145b40bf0
+      Type: BaseDataVariableType
+      DataType: ContentSynchronizationModeEnum
+      Value: 3
+    - Name: IncludeRemoteSourceNode
+      Id: g=0264a3010f439352abe6d0394a42cdb8
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: false
+    - Name: EventSynchronization
+      Id: g=699ef98e7bd1362820abcbc70ce9ca12
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: false
+  - Name: RuntimeConfiguration4
+    Id: g=314db9003a5312de8e3fa45ea431cdf0
+    Type: RuntimeConfigurationEntry
+    Children:
+    - Name: LocalDestinationNode
+      Id: g=aae98fe5f76c4fd2895c04360dadb8a0
+      Type: BaseDataVariableType
+      DataType: NodeId
+      Value: {"IdType":2,"Id":"91a940d160a4ccb503670191b3b882ac","Namespace":16}
+    - Name: RemoteSourceNode
+      Id: g=bc5b93b94e2e3c6009adb4d5ce5a2f59
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "/Objects/FeaturesDemo/UI/CustomStyleSheet"
+    - Name: ContentSynchronizationMode
+      Id: g=35b183ea1a5b1dc95600ce896e28c325
+      Type: BaseDataVariableType
+      DataType: ContentSynchronizationModeEnum
+      Value: 3
+    - Name: IncludeRemoteSourceNode
+      Id: g=88a8c28c502399e9f082fdbe2cb6afa7
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: EventSynchronization
+      Id: g=7b71197569120e1352e51760f4e9281d
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: false
+- Class: Reference
+  Target: ns=13;i=8
+  Direction: Forward
+- Class: Reference
+  Target: ns=13;i=9
+  Direction: Forward
+- Class: Reference
+  Target: ns=13;i=54
+  Direction: Forward
+- Class: Reference
+  Target: ns=13;i=57
+  Direction: Forward
+- Class: Reference
+  Target: ns=13;i=91
+  Direction: Forward
+- Class: Reference
+  Target: ns=13;i=60
+  Direction: Forward
+- Class: Reference
+  Target: ns=13;i=63
+  Direction: Forward
+- Class: Reference
+  Target: ns=13;i=83
+  Direction: Forward
+- Class: Reference
+  Target: ns=13;i=75
+  Direction: Forward
+- Name: Objects
+  Id: g=b6cbfc4b50c93a29bd15c4310ef5307f
+  Type: BaseObjectType

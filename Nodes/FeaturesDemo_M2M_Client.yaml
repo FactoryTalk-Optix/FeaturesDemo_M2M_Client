@@ -1,0 +1,75 @@
+Name: FeaturesDemo_M2M_Client
+Id: g=a90fcaf85e5aa331314c91e7cb8fe7b3
+Type: ProjectFolder
+Children:
+- File: UI/UI.yaml
+- File: Model/Model.yaml
+- File: Converters/Converters.yaml
+- File: Alarms/Alarms.yaml
+- File: Recipes/Recipes.yaml
+- File: Loggers/Loggers.yaml
+- File: DataStores/DataStores.yaml
+- File: Reports/Reports.yaml
+- File: 'OPC-UA/OPC-UA.yaml'
+- File: CommDrivers/CommDrivers.yaml
+- File: NetLogic/NetLogic.yaml
+- File: Users/Users.yaml
+- File: Translations/Translations.yaml
+- File: Retentivity/Retentivity.yaml
+- Name: PasswordPolicy
+  Id: g=8c846ded9d38514339b96714425aeb46
+  Type: PasswordPolicy
+  Children:
+  - Name: MaximumPasswordAge
+    Id: g=2e557af5e9d39dee72fb928180d7b2fa
+    Type: PropertyType
+    DataType: UInt16
+    Value: 0
+  - Name: EnforcePasswordHistory
+    Id: g=d39d20463bc1def578c45edd5ea48c68
+    Type: PropertyType
+    DataType: Byte
+    Value: 0
+  - Name: MinimumPasswordAge
+    Id: g=e083109a7c79c4aebc9b9e8abeb71852
+    Type: PropertyType
+    DataType: UInt16
+    Value: 0
+  - Name: MinimumPasswordLength
+    Id: g=28e3e220f5dfb7d5fbad1fc3c422763b
+    Type: PropertyType
+    DataType: Byte
+    Value: 0
+- Name: Authentication
+  Id: g=84ab00d5d5e504cc1e071d780860fe41
+  Type: PropertyGroup
+- Name: AlarmConfiguration
+  Id: g=fc1e585d3b9d9aaf3aa66733c848e50c
+  Type: PropertyGroup
+  Children:
+  - Name: BranchingEnabled
+    Id: g=322329ba0759f4e5850b40dfd1ec9ddb
+    Type: BaseDataVariableType
+    DataType: Boolean
+    ReferenceType: HasProperty
+    Value: false
+- Name: Localization
+  Id: g=c330c50d9a75684ab5947592205a8abc
+  Type: PropertyGroup
+  Children:
+  - Name: Locales
+    Id: g=af3a3ea1c162e3b708282b391c97d389
+    Type: BaseDataVariableType
+    DataType: String
+    ReferenceType: HasProperty
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+    Value: ["en-US"]
+  - Name: LocaleFallbackList
+    Id: g=ed4026295d74a2a38f82ea462ca1474d
+    Type: BaseDataVariableType
+    DataType: String
+    ReferenceType: HasProperty
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+    Value: ["en-US"]
