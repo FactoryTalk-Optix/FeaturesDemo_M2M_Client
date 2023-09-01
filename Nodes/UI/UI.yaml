@@ -168,6 +168,11 @@ Children:
       Type: BaseDataVariableType
       DataType: Color
       Value: "#e4e4e4"
+    - Name: IconUsesTextColor
+      Id: g=449a3b0a9b59bef1a25f1cf2b498a496
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
   - Name: AccordionStyle
     Id: g=1fa92411fc47c0db1d4926eb52d70ad1
     Type: AccordionStyle
